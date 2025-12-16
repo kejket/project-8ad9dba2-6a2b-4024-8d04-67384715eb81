@@ -13,6 +13,7 @@ import {
   Layers,
   Users
 } from "lucide-react";
+import DigitalTwinVisualization from "./DigitalTwinVisualization";
 
 const components = [
   {
@@ -105,6 +106,12 @@ const DigitalTwinSection = () => {
               다양한 시나리오를 시뮬레이션하며, 향후 상태를 예측하는 데 활용됩니다.
             </p>
           </div>
+        </div>
+
+        {/* 3D Visualization */}
+        <div className="mb-20">
+          <h3 className="text-xl font-semibold text-foreground mb-6">인터랙티브 시각화</h3>
+          <DigitalTwinVisualization />
         </div>
 
         {/* Key Components */}
