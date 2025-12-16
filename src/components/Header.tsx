@@ -11,7 +11,7 @@ const Header = () => {
     { label: "솔루션", href: "/solutions" },
     { label: "기술", href: "/#technology" },
     { label: "산업분야", href: "/#industries" },
-    { label: "회사소개", href: "/#about" },
+    { label: "회사소개", href: "/about" },
   ];
 
   const handleNavClick = (href: string) => {
