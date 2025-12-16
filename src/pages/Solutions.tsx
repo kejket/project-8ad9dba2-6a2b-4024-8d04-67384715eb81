@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import DigitalTwinSection from "@/components/DigitalTwinSection";
 import { Button } from "@/components/ui/button";
 import { 
   AlertTriangle, 
@@ -346,6 +347,9 @@ const Solutions = () => {
             </div>
           </div>
         </section>
+
+        {/* Digital Twin Section */}
+        <DigitalTwinSection />
 
         {/* CTA Section */}
         <section className="py-20 bg-background">
