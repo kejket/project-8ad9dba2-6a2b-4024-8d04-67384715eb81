@@ -1,7 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TechnologyPageHeader from "@/components/TechnologyPageHeader";
-import TechnologySection from "@/components/TechnologySection";
+import SensorModulesSection from "@/components/SensorModulesSection";
+import SoftwareTechnologySection from "@/components/SoftwareTechnologySection";
+import IntegrationArchitectureSection from "@/components/IntegrationArchitectureSection";
 
 const Technology = () => {
   return (
@@ -9,7 +11,9 @@ const Technology = () => {
       <Header />
       <main className="flex-grow pt-20">
         <TechnologyPageHeader />
-        <TechnologySection />
+        <SensorModulesSection />
+        <SoftwareTechnologySection />
+        <IntegrationArchitectureSection />
       </main>
       <Footer />
     </div>
