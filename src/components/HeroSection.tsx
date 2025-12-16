@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Activity, Shield, BarChart3 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import heroImage from "@/assets/hero-industrial.jpg";
 
 const HeroSection = () => {
   return (
@@ -12,35 +13,34 @@ const HeroSection = () => {
 
       {/* Grid Pattern Overlay */}
       <div 
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--industrial-blue)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--industrial-blue)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundSize: '80px 80px'
         }}
       />
 
-      <div className="relative container-narrow section-padding pt-24 pb-16">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative container-narrow section-padding pt-28 pb-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Content */}
           <div className="text-primary-foreground">
-            <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 animate-fade-in">
-              <Activity size={16} className="text-industrial-light" />
-              <span className="text-sm font-medium">Industrial Sensing Solutions</span>
+            <div className="inline-flex items-center gap-2 bg-industrial/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8 animate-fade-in">
+              <div className="w-2 h-2 rounded-full bg-industrial-light animate-pulse" />
+              <span className="text-sm font-medium text-primary-foreground/90">Industrial Sensing Solutions</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              신뢰할 수 있는 기술,
-              <br />
-              <span className="text-industrial-light">사람을 이롭게 하는 기술</span>
+            <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-snug mb-8 animate-fade-in text-balance" style={{ animationDelay: "0.1s" }}>
+              e-snt는 현장 중심의 열정과 전문성을 기반으로 고객과 함께 성장하며{" "}
+              <span className="text-industrial-light">스마트하고 안전한 세상</span>을 만들어 갑니다.
             </h1>
 
-            <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 max-w-xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              e-snt는 산업 현장의 센싱 데이터를 기반으로 설비 모니터링과 안전 관리를 위한 솔루션을 제공합니다.
+            <p className="text-lg text-primary-foreground/75 mb-10 max-w-xl leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              e-snt는 첨단 센싱 솔루션을 통해 현장의 데이터를 확보하고, 이를 기반으로 구축된 디지털 트윈을 통해 운영 효율을 극대화합니다.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero" size="xl">
-                데모 요청하기
+                데모 요청
                 <ArrowRight size={20} />
               </Button>
               <Button variant="hero-outline" size="xl">
@@ -49,22 +49,22 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-12 pt-8 border-t border-primary-foreground/20 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-              <p className="text-sm text-primary-foreground/60 mb-4">신뢰받는 파트너</p>
-              <div className="flex items-center gap-8">
+            <div className="mt-14 pt-8 border-t border-primary-foreground/15 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+              <p className="text-sm text-primary-foreground/50 mb-5 uppercase tracking-wider">신뢰받는 파트너</p>
+              <div className="flex items-center gap-10">
                 <div className="text-center">
-                  <p className="text-2xl font-bold">100+</p>
-                  <p className="text-xs text-primary-foreground/70">도입 현장</p>
+                  <p className="text-3xl font-bold">100+</p>
+                  <p className="text-xs text-primary-foreground/60 mt-1">도입 현장</p>
                 </div>
-                <div className="w-px h-10 bg-primary-foreground/20" />
+                <div className="w-px h-12 bg-primary-foreground/15" />
                 <div className="text-center">
-                  <p className="text-2xl font-bold">99.9%</p>
-                  <p className="text-xs text-primary-foreground/70">데이터 정확도</p>
+                  <p className="text-3xl font-bold">99.9%</p>
+                  <p className="text-xs text-primary-foreground/60 mt-1">데이터 정확도</p>
                 </div>
-                <div className="w-px h-10 bg-primary-foreground/20" />
+                <div className="w-px h-12 bg-primary-foreground/15" />
                 <div className="text-center">
-                  <p className="text-2xl font-bold">24/7</p>
-                  <p className="text-xs text-primary-foreground/70">실시간 모니터링</p>
+                  <p className="text-3xl font-bold">24/7</p>
+                  <p className="text-xs text-primary-foreground/60 mt-1">실시간 모니터링</p>
                 </div>
               </div>
             </div>
@@ -72,48 +72,73 @@ const HeroSection = () => {
 
           {/* Right Visual */}
           <div className="relative hidden lg:block">
-            <div className="relative animate-fade-in-right" style={{ animationDelay: "0.3s" }}>
-              {/* Main Visual Card */}
-              <div className="relative bg-surface-elevated/10 backdrop-blur-md rounded-2xl border border-primary-foreground/10 p-8 shadow-glow">
-                {/* Dashboard Preview */}
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="text-sm font-medium text-primary-foreground/80">실시간 설비 현황</span>
-                    <span className="text-xs text-industrial-light">LIVE</span>
-                  </div>
+            <div className="relative animate-fade-in-right" style={{ animationDelay: "0.2s" }}>
+              {/* Hero Image Container */}
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={heroImage} 
+                  alt="Industrial sensing solution in manufacturing facility" 
+                  className="w-full h-auto object-cover aspect-[4/3]"
+                />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
+                
+                {/* Live Status Badge */}
+                <div className="absolute top-4 right-4 flex items-center gap-2 bg-surface-elevated/90 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+                  <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                  <span className="text-xs font-medium text-foreground">실시간 모니터링</span>
+                </div>
 
-                  {/* Sensor Cards */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-surface-elevated/10 rounded-lg p-4 border border-primary-foreground/10">
-                      <Activity size={20} className="text-industrial-light mb-2" />
-                      <p className="text-xs text-primary-foreground/60">진동 센서</p>
-                      <p className="text-lg font-semibold text-primary-foreground">정상</p>
+                {/* Data Flow Indicator */}
+                <div className="absolute bottom-4 left-4 right-4 bg-navy/80 backdrop-blur-md rounded-xl p-4 border border-primary-foreground/10">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-medium text-primary-foreground/70">센서 데이터 수집 현황</span>
+                    <span className="text-xs text-industrial-light font-medium">LIVE</span>
+                  </div>
+                  <div className="grid grid-cols-3 gap-3">
+                    <div className="text-center">
+                      <p className="text-lg font-bold text-primary-foreground">247</p>
+                      <p className="text-[10px] text-primary-foreground/50">활성 센서</p>
                     </div>
-                    <div className="bg-surface-elevated/10 rounded-lg p-4 border border-primary-foreground/10">
-                      <Shield size={20} className="text-industrial-light mb-2" />
-                      <p className="text-xs text-primary-foreground/60">온도 센서</p>
-                      <p className="text-lg font-semibold text-primary-foreground">42.3°C</p>
+                    <div className="text-center border-x border-primary-foreground/10">
+                      <p className="text-lg font-bold text-primary-foreground">1.2M</p>
+                      <p className="text-[10px] text-primary-foreground/50">일일 데이터</p>
                     </div>
-                    <div className="bg-surface-elevated/10 rounded-lg p-4 border border-primary-foreground/10">
-                      <BarChart3 size={20} className="text-industrial-light mb-2" />
-                      <p className="text-xs text-primary-foreground/60">전력 사용량</p>
-                      <p className="text-lg font-semibold text-primary-foreground">1,240 kW</p>
-                    </div>
-                    <div className="bg-surface-elevated/10 rounded-lg p-4 border border-primary-foreground/10 animate-pulse-subtle">
-                      <div className="w-3 h-3 rounded-full bg-green-400 mb-2" />
-                      <p className="text-xs text-primary-foreground/60">시스템 상태</p>
-                      <p className="text-lg font-semibold text-primary-foreground">가동중</p>
+                    <div className="text-center">
+                      <p className="text-lg font-bold text-industrial-light">정상</p>
+                      <p className="text-[10px] text-primary-foreground/50">시스템 상태</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-industrial rounded-lg p-3 shadow-lg animate-float">
-                <Activity size={24} className="text-accent-foreground" />
+              <div className="absolute -top-6 -right-6 bg-industrial rounded-xl p-4 shadow-xl animate-float z-10">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-accent-foreground/20 flex items-center justify-center">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-accent-foreground">
+                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-accent-foreground/70">진동 분석</p>
+                    <p className="text-sm font-semibold text-accent-foreground">정상 범위</p>
+                  </div>
+                </div>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-surface-elevated rounded-lg p-3 shadow-card animate-float" style={{ animationDelay: "2s" }}>
-                <Shield size={24} className="text-navy" />
+
+              <div className="absolute -bottom-4 -left-6 bg-surface-elevated rounded-xl p-4 shadow-card animate-float z-10" style={{ animationDelay: "2s" }}>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-industrial/10 flex items-center justify-center">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-industrial">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground">안전 상태</p>
+                    <p className="text-sm font-semibold text-foreground">이상 없음</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
