@@ -10,7 +10,7 @@ const Header = () => {
   const navItems = [
     { label: "솔루션", href: "/solutions" },
     { label: "기술", href: "/technology" },
-    { label: "산업분야", href: "/#industries" },
+    { label: "산업분야", href: "/industry" },
     { label: "회사소개", href: "/about" },
   ];
 
