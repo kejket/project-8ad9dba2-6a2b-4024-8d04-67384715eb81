@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DigitalTwinSection from "@/components/DigitalTwinSection";
+import ArchitectureInfographic from "@/components/ArchitectureInfographic";
 import { Button } from "@/components/ui/button";
 import { 
   AlertTriangle, 
@@ -249,6 +250,11 @@ const Solutions = () => {
                   )}
                 </div>
               ))}
+            </div>
+
+            {/* Architecture Infographic */}
+            <div className="mt-16">
+              <ArchitectureInfographic />
             </div>
           </div>
         </section>
