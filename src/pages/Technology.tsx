@@ -4,6 +4,7 @@ import TechnologyPageHeader from "@/components/TechnologyPageHeader";
 import SensorModulesSection from "@/components/SensorModulesSection";
 import SoftwareTechnologySection from "@/components/SoftwareTechnologySection";
 import IntegrationArchitectureSection from "@/components/IntegrationArchitectureSection";
+import DigitalTwinSection from "@/components/DigitalTwinSection";
 
 const Technology = () => {
   return (
@@ -14,6 +15,7 @@ const Technology = () => {
         <SensorModulesSection />
         <SoftwareTechnologySection />
         <IntegrationArchitectureSection />
+        <DigitalTwinSection />
       </main>
       <Footer />
     </div>
