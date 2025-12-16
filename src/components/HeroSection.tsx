@@ -29,9 +29,12 @@ const HeroSection = () => {
               <span className="text-sm font-medium text-primary-foreground/90">Industrial Sensing Solutions</span>
             </div>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold leading-snug mb-8 animate-fade-in text-balance" style={{ animationDelay: "0.1s" }}>
-              e-snt는 현장 중심의 열정과 전문성을 기반으로 고객과 함께 성장하며{" "}
-              <span className="text-industrial-light">스마트하고 안전한 세상</span>을 만들어 갑니다.
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              현장 중심의 열정과 전문성
+              <br />
+              고객과 함께 성장하는
+              <br />
+              <span className="text-industrial-light">스마트하고 안전한 세상.</span>
             </h1>
 
             <p className="text-lg text-primary-foreground/75 mb-10 max-w-xl leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
