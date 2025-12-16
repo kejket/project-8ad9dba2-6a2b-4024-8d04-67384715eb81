@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
+import ContactSection from "@/components/ContactSection";
 import { 
   Heart, 
   Shield, 
@@ -8,8 +8,7 @@ import {
   Users, 
   Target,
   Clock,
-  CheckCircle,
-  ArrowRight
+  CheckCircle
 } from "lucide-react";
 
 const values = [
@@ -270,24 +269,8 @@ const About = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-20 gradient-subtle">
-          <div className="container-narrow section-padding">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                함께 이야기 나누고 싶습니다
-              </h2>
-              <p className="text-muted-foreground mb-8">
-                현장의 과제에 대해 논의하고, 우리가 어떻게 도움을 드릴 수 있는지 
-                함께 검토해 보겠습니다.
-              </p>
-              <Button variant="navy" size="xl">
-                상담 문의하기
-                <ArrowRight size={20} />
-              </Button>
-            </div>
-          </div>
-        </section>
+        {/* Contact Section */}
+        <ContactSection />
       </main>
 
       <Footer />
