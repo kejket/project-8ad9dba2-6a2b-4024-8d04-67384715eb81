@@ -30,11 +30,9 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              현장 중심의 열정과 전문성
+              믿음을 주는 센싱 기술,
               <br />
-              고객과 함께 성장하는
-              <br />
-              <span className="text-industrial-light">스마트하고 안전한 세상.</span>
+              <span className="text-industrial-light">사람을 이롭게 하는 솔루션</span>
             </h1>
 
             <p className="text-lg text-primary-foreground/75 mb-10 max-w-xl leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
