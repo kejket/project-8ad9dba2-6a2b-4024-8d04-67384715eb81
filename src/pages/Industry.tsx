@@ -10,8 +10,8 @@ const Industry = () => {
       <main>
         <PageHeader
           label="INDUSTRIES"
-          title="산업 현장을 위한 센싱 솔루션"
-          description="e-snt의 센싱 솔루션은 제조 현장의 설비, 환경, 안전 요소를 실시간으로 모니터링하여 산업별 운영 요구에 유연하게 적용됩니다."
+          title="제조 현장을 정확하게 이해합니다"
+          description="sentia의 센싱 솔루션은 제조 현장의 미세한 변화와 보이지 않는 위험 요소를 감지하여 산업별 운영 요구에 맞는 안전하고 효율적인 판단을 지원합니다."
         />
         <IndustriesSection />
       </main>

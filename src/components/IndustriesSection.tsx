@@ -4,32 +4,32 @@ const industries = [
   {
     icon: Factory,
     name: "제조업",
-    description: "생산 설비의 상태 모니터링 및 예측 정비",
+    description: "설비 상태의 미세한 변화를 감지하여 정비 시점 판단을 지원합니다.",
   },
   {
     icon: Droplets,
     name: "화학/석유화학",
-    description: "공정 안전 관리 및 누출 감지",
+    description: "보이지 않는 위험 요소를 조기에 감지하여 공정 안전을 지원합니다.",
   },
   {
     icon: Flame,
     name: "철강/금속",
-    description: "고온 환경 설비 모니터링",
+    description: "고온 환경 설비의 상태를 정확하게 파악하여 운영 판단을 돕습니다.",
   },
   {
     icon: Cog,
     name: "자동차",
-    description: "생산라인 품질 관리 및 설비 효율화",
+    description: "생산라인의 이상 징후를 감지하여 품질 관리와 효율 개선을 지원합니다.",
   },
   {
     icon: Zap,
     name: "에너지/발전",
-    description: "발전 설비 상태 진단 및 효율 관리",
+    description: "발전 설비의 상태를 지속적으로 모니터링하여 안정적 운영을 지원합니다.",
   },
   {
     icon: Building2,
     name: "건설/인프라",
-    description: "구조물 안전 모니터링",
+    description: "구조물의 상태 변화를 감지하여 안전 관리 의사결정을 지원합니다.",
   },
 ];
 
@@ -44,8 +44,8 @@ const IndustriesSection = () => {
             다양한 산업 분야에 적용
           </h2>
           <p className="text-lg text-muted-foreground">
-            e-snt의 센싱 솔루션은 제조업부터 에너지, 인프라까지 
-            다양한 산업 환경에 맞춤 적용됩니다.
+            sentia의 센싱 솔루션은 제조업부터 에너지, 인프라까지 
+            각 산업의 특성에 맞춰 정확한 현장 이해와 의사결정을 지원합니다.
           </p>
         </div>
 

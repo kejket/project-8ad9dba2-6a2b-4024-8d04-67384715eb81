@@ -85,8 +85,8 @@ const DigitalTwinSection = () => {
             물리적 자산의 상태를 디지털 공간에 반영하는 기술입니다.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            e-snt의 디지털 트윈 기술은 실시간 데이터 수집과 분석을 통해 설비 모니터링, 
-            상태 분석, 운영 시나리오 검토를 지원합니다.
+            sentia의 디지털 트윈 기술은 실시간 데이터 수집과 분석을 통해 설비 모니터링, 
+            상태 분석, 운영 의사결정을 지원합니다. 이는 현장의 정확한 판단을 돕는 실용적인 도구입니다.
           </p>
         </div>
 
@@ -214,8 +214,8 @@ const DigitalTwinSection = () => {
             <div>
               <h4 className="text-foreground font-semibold mb-2">디지털 트윈의 역할</h4>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                e-snt의 디지털 트윈 기술은 현장 데이터를 기반으로 설비 상태를 이해하고, 
-                운영 의사결정에 필요한 정보를 제공하는 것을 목표로 합니다. 
+                sentia의 디지털 트윈 기술은 현장 데이터를 기반으로 설비 상태를 이해하고, 
+                정확한 판단과 의사결정에 필요한 정보를 제공합니다. 
                 이는 현장 전문가의 판단을 보조하는 도구로서, 데이터 기반의 합리적 의사결정을 지원합니다.
               </p>
             </div>

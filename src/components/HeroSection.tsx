@@ -26,17 +26,18 @@ const HeroSection = () => {
           <div className="text-primary-foreground">
             <div className="inline-flex items-center gap-2 bg-industrial/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8 animate-fade-in">
               <div className="w-2 h-2 rounded-full bg-industrial-light animate-pulse" />
-              <span className="text-sm font-medium text-primary-foreground/90">Industrial Sensing Solutions</span>
+              <span className="text-sm font-medium text-primary-foreground/90">지능형 센싱 솔루션</span>
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              믿음을 주는 센싱 기술,
+              기술로 신뢰를 만들고,
               <br />
-              <span className="text-industrial-light">사람을 이롭게 하는 솔루션</span>
+              <span className="text-industrial-light">기술로 가치를 확장합니다</span>
             </h1>
 
             <p className="text-lg text-primary-foreground/75 mb-10 max-w-xl leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              e-snt는 첨단 센싱 솔루션을 통해 현장의 데이터를 확보하고, 이를 기반으로 구축된 디지털 트윈을 통해 운영 효율을 극대화합니다.
+              sentia는 센싱 기술을 기반으로 산업 현장을 정확하게 이해하고, 
+              그 이해를 신뢰할 수 있는 솔루션으로 구현합니다.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>

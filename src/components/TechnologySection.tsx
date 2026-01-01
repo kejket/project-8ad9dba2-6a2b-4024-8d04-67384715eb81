@@ -31,11 +31,11 @@ const TechnologySection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-sm font-medium text-industrial mb-4">TECHNOLOGY</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            데이터 기반 설비 관리
+            데이터 기반 의사결정 지원
           </h2>
           <p className="text-lg text-muted-foreground">
             센서 데이터의 수집부터 분석, 시각화까지 일관된 프로세스를 통해
-            제조 현장의 효율성과 안전성을 높입니다.
+            정확한 현장 이해와 신뢰할 수 있는 판단을 지원합니다.
           </p>
         </div>
 

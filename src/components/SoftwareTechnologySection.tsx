@@ -51,7 +51,7 @@ const SoftwareTechnologySection = () => {
             소프트웨어 기술 및 시스템 개발
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            e-snt의 소프트웨어 기술은 산업 현장의 운영 조건과 요구 사항을 반영하여 
+            sentia의 소프트웨어 기술은 산업 현장의 운영 조건과 요구 사항을 반영하여 
             유연하고 안정적인 시스템 구성을 지원합니다.
           </p>
         </div>
