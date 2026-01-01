@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageHeader from "@/components/PageHeader";
 import DigitalTwinSection from "@/components/DigitalTwinSection";
 import ArchitectureInfographic from "@/components/ArchitectureInfographic";
 import { Button } from "@/components/ui/button";
@@ -168,23 +169,11 @@ const Solutions = () => {
       <Header />
       
       <main>
-        {/* Hero Section */}
-        <section className="pt-24 pb-16 gradient-hero">
-          <div className="container-narrow section-padding">
-            <div className="max-w-3xl pt-12">
-              <span className="inline-block text-sm font-medium text-industrial-light mb-4">SOLUTIONS</span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-                산업 설비 모니터링 및
-                <br />안전 관리 솔루션
-              </h1>
-              <p className="text-lg text-primary-foreground/80 max-w-2xl">
-                센서 기반 데이터 수집과 중앙 집중식 플랫폼을 통해 
-                제조 현장의 설비 상태를 실시간으로 파악하고 
-                안전한 운영 환경을 구축합니다.
-              </p>
-            </div>
-          </div>
-        </section>
+        <PageHeader
+          label="SOLUTIONS"
+          title={<>산업 설비 모니터링 및<br />안전 관리 솔루션</>}
+          description="센서 기반 데이터 수집과 중앙 집중식 플랫폼을 통해 제조 현장의 설비 상태를 실시간으로 파악하고 안전한 운영 환경을 구축합니다."
+        />
 
         {/* Section 1: Customer Problems */}
         <section className="py-20 bg-background">
