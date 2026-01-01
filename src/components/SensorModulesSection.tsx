@@ -60,7 +60,7 @@ const SensorModulesSection = () => {
             센서 모듈 및 통신 포트 기술
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            e-snt는 산업 현장의 다양한 물리적·전기적 상태를 정확하게 측정하기 위해 
+            sentia는 산업 현장의 다양한 물리적·전기적 상태를 정확하게 측정하기 위해 
             현장 환경에 최적화된 센서 모듈과 통신 포트 기술을 개발·적용합니다.
           </p>
         </div>
@@ -76,7 +76,7 @@ const SensorModulesSection = () => {
                 30종 이상의 센서 모듈 특허 보유
               </h3>
               <p className="text-muted-foreground">
-                e-snt는 산업 현장의 다양한 측정 요구를 충족하기 위해 30종 이상의 센서 모듈에 대한 
+                sentia는 산업 현장의 다양한 측정 요구를 충족하기 위해 30종 이상의 센서 모듈에 대한 
                 특허 기술을 보유하고 있으며, 현장 조건에 따라 유연하게 적용 가능합니다.
               </p>
             </div>

@@ -5,10 +5,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <span className="text-2xl font-bold mb-4 block">e-snt</span>
+            <span className="text-2xl font-bold mb-4 block">sentia</span>
             <p className="text-primary-foreground/70 mb-4 max-w-md">
-              신뢰할 수 있는 기술, 사람을 이롭게 하는 기술.
-              산업 현장의 센싱 솔루션 전문 기업입니다.
+              기술로 신뢰를 만들고, 기술로 가치를 확장합니다.
+              산업용 센싱 솔루션 전문 기업입니다.
             </p>
             <div className="space-y-2 text-sm text-primary-foreground/60">
               <p>서울특별시 강남구 테헤란로 000, 00빌딩 00층</p>
@@ -48,8 +48,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@e-snt.co.kr" className="hover:text-primary-foreground transition-colors">
-                  contact@e-snt.co.kr
+                <a href="mailto:contact@sentia.co.kr" className="hover:text-primary-foreground transition-colors">
+                  contact@sentia.co.kr
                 </a>
               </li>
               <li>평일 09:00 - 18:00</li>
@@ -60,7 +60,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-primary-foreground/50">
-            © 2024 e-snt. All rights reserved.
+            © 2024 sentia. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-sm text-primary-foreground/50 hover:text-primary-foreground transition-colors">

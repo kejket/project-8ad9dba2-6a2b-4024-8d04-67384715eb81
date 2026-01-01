@@ -13,8 +13,8 @@ const Technology = () => {
       <main>
         <PageHeader
           label="CORE TECHNOLOGY"
-          title="센싱 데이터 기반의 핵심 기술"
-          description="e-snt는 산업 현장의 센서 데이터 수집, 전송, 분석, 시각화 기술을 기반으로 안정적인 설비 운영과 안전 관리를 지원합니다."
+          title="정확하게 감지하고, 지능적으로 해석합니다"
+          description="sentia는 산업 현장의 센서 데이터 수집, 전송, 분석, 시각화 기술을 기반으로 신뢰할 수 있는 판단과 의사결정을 지원합니다."
         />
         <SensorModulesSection />
         <SoftwareTechnologySection />

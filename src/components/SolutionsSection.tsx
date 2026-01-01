@@ -47,11 +47,11 @@ const SolutionsSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-sm font-medium text-industrial mb-4">SOLUTIONS</span>
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            산업 현장을 위한 센싱 솔루션
+            현장을 이해하는 센싱 솔루션
           </h2>
           <p className="text-lg text-muted-foreground">
-            e-snt는 제조 현장의 다양한 요구사항에 맞춘 맞춤형 솔루션을 제공합니다.
-            센서 기반 데이터 수집부터 분석, 시각화까지 통합 서비스를 경험하세요.
+            sentia는 산업 현장의 미세한 변화를 감지하고 해석하여
+            정확한 판단과 의사결정을 지원하는 맞춤형 솔루션을 제공합니다.
           </p>
         </div>
 

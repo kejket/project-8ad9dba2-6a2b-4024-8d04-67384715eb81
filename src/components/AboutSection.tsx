@@ -7,16 +7,15 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content */}
           <div>
-            <span className="inline-block text-sm font-medium text-industrial mb-4">ABOUT e-snt</span>
+            <span className="inline-block text-sm font-medium text-industrial mb-4">ABOUT SENTIA</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              신뢰할 수 있는 기술,
-              <br />사람을 이롭게 하는 기술
+              사람을 이롭게 하는 기술
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              e-snt는 산업 현장의 안전과 효율을 높이기 위해 
-              센싱 기술과 데이터 플랫폼을 연구하고 개발합니다.
-              기술이 사람을 이롭게 한다는 믿음 아래, 
-              제조 현장의 문제를 해결하는 실질적인 솔루션을 제공합니다.
+              sentia는 센싱 기술을 기반으로 산업 현장을 정확하게 이해하고, 
+              그 이해를 신뢰할 수 있는 솔루션으로 구현합니다.
+              미세한 변화, 보이지 않는 위험, 놓치기 쉬운 신호를 정확하게 감지하고 해석하여 
+              더 안전하고 효율적인 판단과 의사결정을 지원합니다.
             </p>
 
             {/* Values */}
@@ -26,9 +25,9 @@ const AboutSection = () => {
                   <Heart size={20} className="text-industrial" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">사람 중심</h3>
+                  <h3 className="font-semibold text-foreground mb-1">최고의 전문성</h3>
                   <p className="text-sm text-muted-foreground">
-                    현장 작업자의 안전과 편의를 최우선으로 생각합니다.
+                    풍부한 현장 경험을 바탕으로 신뢰할 수 있는 기술적 기반을 제공합니다.
                   </p>
                 </div>
               </div>
@@ -38,9 +37,9 @@ const AboutSection = () => {
                   <Target size={20} className="text-industrial" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">실용적 기술</h3>
+                  <h3 className="font-semibold text-foreground mb-1">현장 맞춤 최적화</h3>
                   <p className="text-sm text-muted-foreground">
-                    현장에서 실제로 활용 가능한 솔루션을 개발합니다.
+                    안전성과 효율성을 높인 현장 맞춤식 최적의 솔루션을 설계합니다.
                   </p>
                 </div>
               </div>
@@ -50,9 +49,9 @@ const AboutSection = () => {
                   <Users size={20} className="text-industrial" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-1">파트너십</h3>
+                  <h3 className="font-semibold text-foreground mb-1">운영 혁신과 가치 창출</h3>
                   <p className="text-sm text-muted-foreground">
-                    고객사와 함께 문제를 정의하고 해결책을 찾습니다.
+                    특화된 기술력을 바탕으로 비용 절감과 수익 개선의 경제적 가치를 창출합니다.
                   </p>
                 </div>
               </div>
@@ -83,7 +82,7 @@ const AboutSection = () => {
 
               <div className="mt-8 pt-6 border-t border-primary-foreground/10">
                 <p className="text-center text-sm text-primary-foreground/60">
-                  "기술은 사람을 위해 존재합니다"
+                  "기술의 발전은 효율을 넘어 안전, 지속 가능성, 삶의 질로 이어져야 합니다"
                 </p>
               </div>
             </div>

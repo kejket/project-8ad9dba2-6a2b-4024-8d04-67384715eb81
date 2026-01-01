@@ -171,8 +171,8 @@ const Solutions = () => {
       <main>
         <PageHeader
           label="SOLUTIONS"
-          title={<>산업 설비 모니터링 및<br />안전 관리 솔루션</>}
-          description="센서 기반 데이터 수집과 중앙 집중식 플랫폼을 통해 제조 현장의 설비 상태를 실시간으로 파악하고 안전한 운영 환경을 구축합니다."
+          title={<>지능형 센싱 솔루션으로<br />현장을 이해합니다</>}
+          description="sentia의 센싱 솔루션은 산업 현장의 미세한 변화, 보이지 않는 위험, 놓치기 쉬운 신호를 정확하게 감지하고 해석하여 더 안전하고 효율적인 판단과 의사결정을 지원합니다."
         />
 
         {/* Section 1: Customer Problems */}
@@ -214,11 +214,11 @@ const Solutions = () => {
             <div className="max-w-3xl mb-12">
               <span className="inline-block text-sm font-medium text-industrial mb-4">SOLUTION OVERVIEW</span>
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                e-snt 솔루션 구성
+                sentia 솔루션 구성
               </h2>
               <p className="text-muted-foreground">
                 센서, 게이트웨이, 중앙 플랫폼으로 구성된 통합 솔루션을 통해 
-                현장 데이터를 수집하고 분석하여 운영 효율을 높입니다.
+                현장 데이터를 수집하고 분석하여 정확한 판단과 의사결정을 지원합니다.
               </p>
             </div>
 
