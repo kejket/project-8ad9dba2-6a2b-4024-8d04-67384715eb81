@@ -70,7 +70,7 @@ const About = () => {
       <PageHeader
         label="ABOUT SENTIA"
         title="SENTIA를 이해하다"
-        description="sentia는 산업 현장을 정확하게 이해하는 것에서 출발합니다. 보이지 않던 위험과 미세한 변화를 감지하고, 그 이해를 신뢰할 수 있는 판단과 의사결정으로 연결합니다."
+        description="sentia는 센싱 기술로 산업 현장을 정확하게 이해하고, 그 이해를 신뢰할 수 있는 판단과 의사결정으로 연결합니다."
       />
 
       <main>

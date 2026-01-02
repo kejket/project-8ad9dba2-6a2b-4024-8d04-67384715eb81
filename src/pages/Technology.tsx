@@ -13,8 +13,8 @@ const Technology = () => {
       <main>
         <PageHeader
           label="CORE TECHNOLOGY"
-          title="정확하게 감지하고, 지능적으로 해석합니다"
-          description="sentia는 산업 현장의 센서 데이터 수집, 전송, 분석, 시각화 기술을 기반으로 신뢰할 수 있는 판단과 의사결정을 지원합니다."
+          title="정확하게 감지하고, 의미 있게 해석합니다"
+          description="sentia는 센싱 기술로 산업 현장의 물리적 상태를 정확하게 측정하고, 그 데이터를 분석하여 신뢰할 수 있는 판단의 기반을 제공합니다."
         />
         <SensorModulesSection />
         <SoftwareTechnologySection />
