@@ -43,14 +43,15 @@ const SoftwareTechnologySection = () => {
     <section className="py-20 gradient-subtle">
       <div className="container-narrow section-padding">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-4xl mb-16">
           <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
             SOFTWARE TECHNOLOGY
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            소프트웨어 기술 및 시스템 개발
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
+            <span className="block">소프트웨어 기술 및</span>
+            <span className="block">시스템 개발</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
             sentia의 소프트웨어 기술은 산업 현장의 운영 조건과 요구 사항을 반영하여 
             유연하고 안정적인 시스템 구성을 지원합니다.
           </p>

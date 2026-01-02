@@ -58,14 +58,15 @@ const IntegrationArchitectureSection = () => {
     <section className="py-20 bg-background">
       <div className="container-narrow section-padding">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-4xl mb-16">
           <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
             SYSTEM ARCHITECTURE
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            하드웨어와 소프트웨어의 통합 구조
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
+            <span className="block">하드웨어와 소프트웨어의</span>
+            <span className="block">통합 구조</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
             센서 모듈에서 수집된 데이터는 소프트웨어 플랫폼과 유기적으로 연동되어 
             실시간 모니터링과 제어 환경을 구성합니다.
           </p>

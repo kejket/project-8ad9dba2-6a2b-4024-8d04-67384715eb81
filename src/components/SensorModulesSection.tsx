@@ -52,14 +52,15 @@ const SensorModulesSection = () => {
     <section className="py-20 bg-background">
       <div className="container-narrow section-padding">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-4xl mb-16">
           <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
             SENSOR TECHNOLOGY
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            센서 모듈 및 통신 포트 기술
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
+            <span className="block">센서 모듈 및 통신 포트</span>
+            <span className="block">기술</span>
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
             sentia는 산업 현장의 다양한 물리적·전기적 상태를 정확하게 측정하기 위해 
             현장 환경에 최적화된 센서 모듈과 통신 포트 기술을 개발·적용합니다.
           </p>
