@@ -1,144 +1,133 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ContactSection from "@/components/ContactSection";
-import { 
-  Heart, 
-  Shield, 
-  Wrench, 
-  Users, 
-  Target,
-  Clock,
-  CheckCircle
-} from "lucide-react";
-
-const values = [
-  {
-    icon: Heart,
-    title: "사람을 위한 기술",
-    description: "기술의 궁극적인 목적은 현장에서 일하는 사람들의 안전과 편의를 높이는 것입니다. 우리는 모든 솔루션을 설계할 때 사용자의 관점에서 출발합니다.",
-  },
-  {
-    icon: Shield,
-    title: "신뢰할 수 있는 품질",
-    description: "산업 현장에서 시스템의 안정성은 선택이 아닌 필수입니다. 우리는 검증된 기술과 철저한 테스트를 통해 고객이 믿고 사용할 수 있는 솔루션을 제공합니다.",
-  },
-  {
-    icon: Wrench,
-    title: "엔지니어링 중심 문화",
-    description: "문제 해결은 마케팅 메시지가 아닌 기술적 역량에서 시작됩니다. 우리 팀은 현장의 실제 과제를 이해하고 실용적인 해결책을 찾는 데 집중합니다.",
-  },
-  {
-    icon: Users,
-    title: "장기적 파트너십",
-    description: "일회성 납품이 아닌 지속적인 협력을 추구합니다. 고객의 현장을 함께 이해하고, 운영 과정에서 발생하는 요구사항에 꾸준히 대응합니다.",
-  },
-];
-
-const commitments = [
-  {
-    title: "현장 중심 접근",
-    description: "실제 제조 환경의 조건과 제약을 이해하고, 그에 맞는 현실적인 솔루션을 설계합니다.",
-  },
-  {
-    title: "투명한 커뮤니케이션",
-    description: "기술적 한계와 가능성을 솔직하게 공유하고, 기대치를 명확히 조율합니다.",
-  },
-  {
-    title: "지속적인 개선",
-    description: "도입 이후에도 데이터를 분석하고 피드백을 반영하여 솔루션을 발전시켜 나갑니다.",
-  },
-  {
-    title: "기술 지원 책임",
-    description: "문제 발생 시 신속하게 대응하고, 운영 안정성을 유지할 수 있도록 지원합니다.",
-  },
-];
+import PageHeader from "@/components/PageHeader";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
+  const principles = [
+    {
+      title: "최고의 전문성",
+      description: "산업 현장의 복잡한 문제를 이해하고 해결하기 위해, 센싱 기술과 데이터 분석에 대한 깊은 전문성을 갖추고 있습니다."
+    },
+    {
+      title: "현장 맞춤 최적의 솔루션",
+      description: "모든 산업 현장은 고유한 특성을 가집니다. sentia는 각 현장의 조건과 요구에 맞춘 최적화된 솔루션을 제공합니다."
+    },
+    {
+      title: "운영의 혁신과 가치 창출",
+      description: "단순한 모니터링을 넘어, 운영 효율성을 높이고 실질적인 비즈니스 가치를 창출하는 것을 목표로 합니다."
+    },
+    {
+      title: "사람과 사회에 이로운 기술",
+      description: "기술은 궁극적으로 사람의 안전과 사회의 발전에 기여해야 합니다. sentia는 이 방향성을 모든 기술 개발의 기준으로 삼습니다."
+    }
+  ];
+
+  const workProcess = [
+    {
+      step: "01",
+      title: "Sense",
+      titleKo: "감지",
+      description: "산업 현장의 물리적, 운영적 조건을 센싱 기술을 통해 데이터로 수집합니다. 보이지 않던 미세한 변화와 잠재적 위험 요소까지 포착합니다."
+    },
+    {
+      step: "02",
+      title: "Understand",
+      titleKo: "이해",
+      description: "수집된 데이터를 검증하고 분석하여 의미 있는 정보로 변환합니다. 패턴, 이상 징후, 변화 추이를 식별하여 현장 상황을 정확하게 파악합니다."
+    },
+    {
+      step: "03",
+      title: "Decide",
+      titleKo: "판단",
+      description: "분석된 정보를 바탕으로 운영 판단을 지원합니다. 더 안전하고 효율적인 의사결정이 가능하도록 신뢰할 수 있는 근거를 제공합니다."
+    }
+  ];
+
+  const pageConnections = [
+    {
+      title: "솔루션",
+      description: "sentia가 무엇을 제공하는지",
+      href: "/solutions"
+    },
+    {
+      title: "기술",
+      description: "어떻게 구현되는지",
+      href: "/technology"
+    },
+    {
+      title: "산업분야",
+      description: "어디에 적용되는지",
+      href: "/industry"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
       
+      <PageHeader
+        label="ABOUT SENTIA"
+        title="SENTIA를 이해하다"
+        description="sentia는 산업 현장을 정확하게 이해하는 것에서 출발합니다. 보이지 않던 위험과 미세한 변화를 감지하고, 그 이해를 신뢰할 수 있는 판단과 의사결정으로 연결합니다."
+      />
+
       <main>
-        {/* Hero Section */}
-        <section className="pt-24 pb-20 gradient-hero">
+        {/* Section 2: What SENTIA Means */}
+        <section className="py-20 bg-background">
           <div className="container-narrow section-padding">
-            <div className="max-w-3xl pt-12">
-              <span className="inline-block text-sm font-medium text-industrial-light mb-4">ABOUT US</span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 leading-tight">
-                신뢰할 수 있는 기술,
-                <br />사람을 이롭게 하는 기술
-              </h1>
-              <p className="text-lg text-primary-foreground/80 max-w-2xl leading-relaxed">
-                e-snt는 산업 현장의 안전과 운영 효율을 높이기 위해 
-                센싱 기술과 데이터 플랫폼을 연구하고 개발합니다.
-              </p>
+            <div className="max-w-3xl">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+                SENTIA라는 이름의 의미
+              </h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  sentia는 <span className="text-foreground font-medium">Sense</span>와 <span className="text-foreground font-medium">Intelligence</span>의 결합에서 비롯된 이름입니다.
+                </p>
+                <p>
+                  이 이름은 단순히 데이터를 수집하는 것을 넘어, 센싱을 통해 얻은 정보를 해석하고 의미 있는 이해로 전환하는 sentia의 핵심 역할을 반영합니다.
+                </p>
+                <p>
+                  산업 현장에서 발생하는 물리적 현상을 감지(Sense)하고, 이를 통찰력 있는 정보(Intelligence)로 변환하여, 신뢰할 수 있는 판단의 기반을 만드는 것이 sentia가 추구하는 가치입니다.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Mission Statement */}
-        <section className="py-20 bg-background">
+        {/* Section 3: Technology Perspective */}
+        <section className="py-20 bg-surface">
           <div className="container-narrow section-padding">
-            <div className="max-w-4xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <span className="inline-block text-sm font-medium text-industrial mb-4">OUR MISSION</span>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
-                    우리가 하는 일
-                  </h2>
-                  <div className="space-y-4 text-muted-foreground leading-relaxed">
-                    <p>
-                      제조 현장에서는 설비의 상태를 정확히 파악하고, 
-                      이상 징후를 조기에 감지하는 것이 안전과 생산성 모두에 직결됩니다.
-                    </p>
-                    <p>
-                      e-snt는 산업용 센서를 통해 설비의 물리적 상태를 측정하고, 
-                      수집된 데이터를 분석하여 운영자가 적시에 판단할 수 있도록 지원합니다.
-                    </p>
-                    <p>
-                      우리는 과장된 약속 대신, 
-                      현장에서 실제로 작동하는 기술을 만드는 데 집중합니다.
-                    </p>
-                  </div>
+            <div className="max-w-3xl">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
+                SENTIA의 기술 관점
+              </h2>
+              <div className="space-y-6">
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    sentia에게 기술은 현실을 정확하게 이해하기 위한 도구입니다. 기술 그 자체가 목적이 아닙니다.
+                  </p>
+                  <p>
+                    정확한 센싱은 신뢰할 수 있는 시스템의 기초입니다. 데이터의 품질과 정합성이 보장되지 않으면, 그 위에 구축되는 모든 분석과 판단은 의미를 잃습니다.
+                  </p>
+                  <p>
+                    sentia는 화려한 기술 시연보다 현장에서 실제로 작동하는 기술을 추구합니다. 적용 가능성, 신뢰성, 그리고 현장 전문가들이 신뢰할 수 있는 결과를 제공하는 것이 sentia 기술의 기준입니다.
+                  </p>
                 </div>
-
-                <div className="bg-secondary/50 rounded-2xl p-8 border border-border">
-                  <div className="space-y-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-industrial/10 flex items-center justify-center flex-shrink-0">
-                        <Target size={20} className="text-industrial" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-1">명확한 목표</h3>
-                        <p className="text-sm text-muted-foreground">
-                          산업 현장의 안전성과 운영 효율 향상
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-industrial/10 flex items-center justify-center flex-shrink-0">
-                        <Wrench size={20} className="text-industrial" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-1">실용적 접근</h3>
-                        <p className="text-sm text-muted-foreground">
-                          현장 조건에 맞는 검증된 기술 적용
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-industrial/10 flex items-center justify-center flex-shrink-0">
-                        <Clock size={20} className="text-industrial" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-1">지속적 지원</h3>
-                        <p className="text-sm text-muted-foreground">
-                          도입 후에도 함께하는 기술 파트너
-                        </p>
-                      </div>
-                    </div>
+                
+                <div className="grid sm:grid-cols-3 gap-4 pt-4">
+                  <div className="p-4 bg-background rounded-lg border border-border">
+                    <h4 className="font-semibold text-foreground mb-2">적용 가능성</h4>
+                    <p className="text-sm text-muted-foreground">실제 산업 환경에서 안정적으로 운영될 수 있는 기술</p>
+                  </div>
+                  <div className="p-4 bg-background rounded-lg border border-border">
+                    <h4 className="font-semibold text-foreground mb-2">신뢰성</h4>
+                    <p className="text-sm text-muted-foreground">검증된 데이터와 일관된 결과를 제공하는 시스템</p>
+                  </div>
+                  <div className="p-4 bg-background rounded-lg border border-border">
+                    <h4 className="font-semibold text-foreground mb-2">현장 중심</h4>
+                    <p className="text-sm text-muted-foreground">현장 전문가의 판단을 지원하는 실용적 접근</p>
                   </div>
                 </div>
               </div>
@@ -146,33 +135,65 @@ const About = () => {
           </div>
         </section>
 
-        {/* Core Values */}
-        <section className="py-20 gradient-subtle">
+        {/* Section 4: How SENTIA Works */}
+        <section className="py-20 bg-background">
           <div className="container-narrow section-padding">
-            <div className="max-w-3xl mb-12">
-              <span className="inline-block text-sm font-medium text-industrial mb-4">CORE VALUES</span>
+            <div className="mb-12">
               <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                우리가 믿는 가치
+                SENTIA WORKS
               </h2>
-              <p className="text-muted-foreground">
-                e-snt의 모든 활동은 다음의 핵심 가치를 기반으로 합니다.
+              <p className="text-muted-foreground max-w-2xl">
+                sentia는 산업 현장의 데이터를 의미 있는 판단으로 연결하는 체계적인 프로세스를 따릅니다.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {workProcess.map((process, index) => (
+                <div key={index} className="relative">
+                  <div className="mb-4">
+                    <span className="text-4xl font-bold text-navy/20">{process.step}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground mb-1">
+                    {process.title}
+                  </h3>
+                  <p className="text-sm text-navy font-medium mb-3">{process.titleKo}</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {process.description}
+                  </p>
+                  {index < workProcess.length - 1 && (
+                    <div className="hidden md:block absolute top-8 -right-4 text-border">
+                      <ArrowRight size={24} />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Section 5: SENTIA Principles */}
+        <section className="py-20 bg-surface">
+          <div className="container-narrow section-padding">
+            <div className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                SENTIA의 원칙
+              </h2>
+              <p className="text-muted-foreground max-w-2xl">
+                sentia의 모든 기술 개발과 솔루션 제공은 다음 원칙에 기반합니다.
               </p>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-6">
-              {values.map((value) => (
-                <div
-                  key={value.title}
-                  className="bg-card rounded-xl border border-border p-6 hover:shadow-card transition-shadow"
+              {principles.map((principle, index) => (
+                <div 
+                  key={index} 
+                  className="p-6 bg-background rounded-lg border border-border"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-navy flex items-center justify-center mb-4">
-                    <value.icon size={24} className="text-primary-foreground" />
-                  </div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">
-                    {value.title}
+                    {principle.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {value.description}
+                  <p className="text-muted-foreground leading-relaxed">
+                    {principle.description}
                   </p>
                 </div>
               ))}
@@ -180,97 +201,41 @@ const About = () => {
           </div>
         </section>
 
-        {/* Commitment to Customers */}
-        <section className="py-20 bg-navy text-primary-foreground">
-          <div className="container-narrow section-padding">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <span className="inline-block text-sm font-medium text-industrial-light mb-4">OUR COMMITMENT</span>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-4">
-                  고객에 대한 약속
-                </h2>
-                <p className="text-primary-foreground/70 max-w-2xl mx-auto">
-                  우리는 고객과의 관계를 단순한 거래가 아닌 
-                  함께 문제를 해결해 나가는 파트너십으로 생각합니다.
-                </p>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-6">
-                {commitments.map((commitment, index) => (
-                  <div
-                    key={commitment.title}
-                    className="flex items-start gap-4 p-5 rounded-xl bg-primary-foreground/5 border border-primary-foreground/10"
-                  >
-                    <div className="w-8 h-8 rounded-full bg-industrial/20 flex items-center justify-center flex-shrink-0">
-                      <CheckCircle size={16} className="text-industrial-light" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">{commitment.title}</h3>
-                      <p className="text-sm text-primary-foreground/70">
-                        {commitment.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Engineering Culture */}
+        {/* Section 6: Page Connections */}
         <section className="py-20 bg-background">
           <div className="container-narrow section-padding">
-            <div className="max-w-4xl mx-auto">
-              <div className="grid lg:grid-cols-5 gap-12 items-center">
-                <div className="lg:col-span-3">
-                  <span className="inline-block text-sm font-medium text-industrial mb-4">ENGINEERING CULTURE</span>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
-                    엔지니어링 중심의 조직
-                  </h2>
-                  <div className="space-y-4 text-muted-foreground leading-relaxed">
-                    <p>
-                      e-snt는 기술 역량을 핵심 경쟁력으로 삼는 조직입니다. 
-                      우리 팀은 센서 하드웨어, 임베디드 시스템, 데이터 분석, 
-                      클라우드 플랫폼 등 다양한 분야의 엔지니어들로 구성되어 있습니다.
-                    </p>
-                    <p>
-                      현장의 문제를 직접 확인하고, 기술적 가능성을 검토하며, 
-                      실제로 작동하는 솔루션을 만들어 내는 과정을 중요하게 생각합니다.
-                    </p>
-                    <p>
-                      화려한 프레젠테이션보다 동작하는 프로토타입을, 
-                      추상적인 비전보다 구체적인 구현을 우선시합니다.
-                    </p>
-                  </div>
-                </div>
+            <div className="mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
+                더 알아보기
+              </h2>
+              <p className="text-muted-foreground max-w-2xl">
+                이 페이지는 sentia가 <span className="text-foreground font-medium">왜</span> 존재하는지를 설명합니다. 
+                sentia의 구체적인 역할과 기술에 대해 더 알아보세요.
+              </p>
+            </div>
 
-                <div className="lg:col-span-2">
-                  <div className="bg-secondary/50 rounded-2xl p-6 border border-border">
-                    <h3 className="font-semibold text-foreground mb-4">우리 팀의 전문 분야</h3>
-                    <ul className="space-y-3">
-                      {[
-                        "산업용 센서 및 하드웨어 설계",
-                        "임베디드 시스템 개발",
-                        "데이터 수집 및 전송 프로토콜",
-                        "시계열 데이터 분석",
-                        "클라우드 플랫폼 구축",
-                        "산업 현장 시스템 통합",
-                      ].map((item) => (
-                        <li key={item} className="flex items-center gap-3 text-sm text-muted-foreground">
-                          <div className="w-1.5 h-1.5 rounded-full bg-industrial flex-shrink-0" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
+            <div className="grid sm:grid-cols-3 gap-6">
+              {pageConnections.map((page, index) => (
+                <Link
+                  key={index}
+                  to={page.href}
+                  className="group p-6 bg-surface rounded-lg border border-border hover:border-navy/30 transition-colors"
+                >
+                  <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-navy transition-colors">
+                    {page.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm mb-4">
+                    {page.description}
+                  </p>
+                  <span className="inline-flex items-center text-sm text-navy font-medium">
+                    자세히 보기
+                    <ArrowRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
-
-        {/* Contact Section */}
-        <ContactSection />
       </main>
 
       <Footer />
