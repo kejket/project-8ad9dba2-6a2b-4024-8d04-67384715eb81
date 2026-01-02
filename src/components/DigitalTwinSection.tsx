@@ -69,10 +69,11 @@ const DigitalTwinSection = () => {
           <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
             DIGITAL TWIN
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            센싱 데이터 기반 디지털 트윈 기술
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
+            <span className="block">센싱 데이터 기반</span>
+            <span className="block">디지털 트윈 기술</span>
           </h2>
-          <p className="text-lg text-muted-foreground mb-6">
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
             실제 현장 데이터를 반영한 디지털 모델을 통해 설비 상태를 이해하고 운영 판단을 지원합니다.
           </p>
         </div>

@@ -38,12 +38,13 @@ const IndustriesSection = () => {
     <section id="industries" className="py-24 bg-background">
       <div className="container-narrow section-padding">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-sm font-medium text-industrial mb-4">INDUSTRIES</span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            다양한 산업 분야에 적용
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">INDUSTRIES</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
+            <span className="block sm:inline">다양한 산업 분야에</span>{" "}
+            <span className="block sm:inline">적용</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             sentia의 센싱 솔루션은 제조업부터 에너지, 인프라까지 
             각 산업의 특성에 맞춰 정확한 현장 이해와 의사결정을 지원합니다.
           </p>
