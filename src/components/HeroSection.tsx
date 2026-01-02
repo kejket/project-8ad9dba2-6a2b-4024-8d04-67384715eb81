@@ -30,14 +30,14 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              기술로 신뢰를 만들고,
+              현장을 이해하고,
               <br />
-              <span className="text-industrial-light">기술로 가치를 확장합니다</span>
+              <span className="text-industrial-light">신뢰할 수 있는 판단으로 연결합니다</span>
             </h1>
 
             <p className="text-lg text-primary-foreground/75 mb-10 max-w-xl leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              sentia는 센싱 기술을 기반으로 산업 현장을 정확하게 이해하고, 
-              그 이해를 신뢰할 수 있는 솔루션으로 구현합니다.
+              sentia는 센싱 기술로 산업 현장을 정확하게 이해하고, 
+              그 이해를 신뢰할 수 있는 판단과 의사결정으로 연결합니다.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>

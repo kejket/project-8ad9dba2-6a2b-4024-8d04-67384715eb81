@@ -67,8 +67,8 @@ const IntegrationArchitectureSection = () => {
             <span className="block">통합 구조</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            센서 모듈에서 수집된 데이터는 소프트웨어 플랫폼과 유기적으로 연동되어 
-            실시간 모니터링과 제어 환경을 구성합니다.
+            센서에서 수집된 데이터는 소프트웨어 플랫폼과 연동되어 
+            실시간 모니터링과 운영 판단을 지원하는 환경을 구성합니다.
           </p>
         </div>
 
