@@ -15,4 +15,8 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    sourcemap: false, // 배포 시 소스맵 비활성화로 소스 코드 노출 방지
+    minify: "esbuild",
+  },
 }));
