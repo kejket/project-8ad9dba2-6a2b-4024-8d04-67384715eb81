@@ -1,5 +1,5 @@
 import { Cpu, Wifi, Server, Monitor, ArrowRight, Database, Shield } from "lucide-react";
-
+import dataArchitectureImage from "@/assets/data-architecture.jpg";
 const architectureLayers = [
   {
     id: "sensors",
@@ -70,6 +70,15 @@ const IntegrationArchitectureSection = () => {
             센서 모듈에서 수집된 데이터는 소프트웨어 플랫폼과 유기적으로 연동되어 
             실시간 모니터링과 제어 환경을 구성합니다.
           </p>
+        </div>
+
+        {/* Architecture Visual */}
+        <div className="rounded-xl overflow-hidden shadow-xl mb-12">
+          <img 
+            src={dataArchitectureImage} 
+            alt="Industrial data flow architecture from sensors to cloud" 
+            className="w-full h-auto object-cover aspect-[21/9]"
+          />
         </div>
 
         {/* Architecture Diagram */}

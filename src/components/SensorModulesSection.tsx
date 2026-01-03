@@ -1,4 +1,5 @@
 import { Cpu, Radio, Thermometer, Zap, Volume2, Droplets, Wind, Activity, Gauge, CircuitBoard } from "lucide-react";
+import sensorTechImage from "@/assets/sensor-technology.jpg";
 
 const sensorCategories = [
   {
@@ -64,6 +65,15 @@ const SensorModulesSection = () => {
             물리적·전기적 상태를 정밀하게 측정하기 위한 센서 모듈과, 
             산업 환경의 전자기 간섭 조건에서 안정적으로 데이터를 취득하는 통신 기술을 적용합니다.
           </p>
+        </div>
+
+        {/* Sensor Technology Visual */}
+        <div className="rounded-xl overflow-hidden shadow-xl mb-12">
+          <img 
+            src={sensorTechImage} 
+            alt="Industrial sensor modules and communication hardware" 
+            className="w-full h-auto object-cover aspect-[21/9]"
+          />
         </div>
 
         {/* Patent Info */}
