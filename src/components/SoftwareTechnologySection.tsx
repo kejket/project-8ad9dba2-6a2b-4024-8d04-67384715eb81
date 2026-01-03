@@ -1,4 +1,5 @@
 import { Settings, Code, Cpu, Layers, RefreshCw, Zap, TrendingUp } from "lucide-react";
+import dataArchitectureImage from "@/assets/data-architecture.jpg";
 
 const capabilities = [
   {
@@ -43,18 +44,31 @@ const SoftwareTechnologySection = () => {
     <section className="py-20 gradient-subtle">
       <div className="container-narrow section-padding">
         {/* Section Header */}
-        <div className="max-w-4xl mb-16">
-          <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
-            SOFTWARE TECHNOLOGY
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
-            <span className="block">소프트웨어 기술 및</span>
-            <span className="block">시스템 개발</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            sentia의 소프트웨어 기술은 산업 현장의 운영 조건과 요구 사항을 반영하여 
-            유연하고 안정적인 시스템 구성을 지원합니다.
-          </p>
+        <div className="max-w-6xl mb-16">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+            {/* Image */}
+            <div className="w-full lg:w-2/5 flex-shrink-0">
+              <img 
+                src={dataArchitectureImage} 
+                alt="Data Architecture" 
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
+            {/* Text Content */}
+            <div className="flex-1 lg:w-3/5">
+              <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
+                SOFTWARE TECHNOLOGY
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
+                <span className="block">소프트웨어 기술 및</span>
+                <span className="block">시스템 개발</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                sentia의 소프트웨어 기술은 산업 현장의 운영 조건과 요구 사항을 반영하여 
+                유연하고 안정적인 시스템 구성을 지원합니다.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Capabilities Grid */}

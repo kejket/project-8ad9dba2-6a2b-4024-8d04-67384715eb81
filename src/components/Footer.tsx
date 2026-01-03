@@ -11,8 +11,8 @@ const Footer = () => {
               산업용 센싱 솔루션 전문 기업입니다.
             </p>
             <div className="space-y-2 text-sm text-primary-foreground/60">
-              <p>서울특별시 강남구 테헤란로 000, 00빌딩 00층</p>
-              <p>사업자등록번호: 000-00-00000</p>
+              <p>서울특별시 양천구 월정로22 B03</p>
+              <p>사업자등록번호: 117-86-00000</p>
             </div>
           </div>
 
@@ -40,19 +40,13 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">연락처</h4>
+            <h4 className="font-semibold mb-4">문의 및 요청</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/60">
               <li>
-                <a href="tel:+82-00-0000-0000" className="hover:text-primary-foreground transition-colors">
-                  02-0000-0000
+                <a href="mailto:contact@sentia.com" className="hover:text-primary-foreground transition-colors">
+                  contact@sentia.com
                 </a>
               </li>
-              <li>
-                <a href="mailto:contact@sentia.co.kr" className="hover:text-primary-foreground transition-colors">
-                  contact@sentia.co.kr
-                </a>
-              </li>
-              <li>평일 09:00 - 18:00</li>
             </ul>
           </div>
         </div>

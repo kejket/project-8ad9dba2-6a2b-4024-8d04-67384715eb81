@@ -1,4 +1,5 @@
 import { Cpu, Radio, Thermometer, Zap, Volume2, Droplets, Wind, Activity, Gauge, CircuitBoard } from "lucide-react";
+import sensorTechnologyImage from "@/assets/sensor-technology.jpg";
 
 const sensorCategories = [
   {
@@ -52,18 +53,31 @@ const SensorModulesSection = () => {
     <section className="py-20 bg-background">
       <div className="container-narrow section-padding">
         {/* Section Header */}
-        <div className="max-w-4xl mb-16">
-          <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
-            SENSOR TECHNOLOGY
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
-            <span className="block">센서 모듈 및 통신 포트</span>
-            <span className="block">기술</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            물리적·전기적 상태를 정밀하게 측정하기 위한 센서 모듈과, 
-            산업 환경의 전자기 간섭 조건에서 안정적으로 데이터를 취득하는 통신 기술을 적용합니다.
-          </p>
+        <div className="max-w-6xl mb-16">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+            {/* Image */}
+            <div className="w-full lg:w-2/5 flex-shrink-0">
+              <img 
+                src={sensorTechnologyImage} 
+                alt="Sensor Technology" 
+                className="w-full h-auto rounded-lg object-cover"
+              />
+            </div>
+            {/* Text Content */}
+            <div className="flex-1 lg:w-3/5">
+              <span className="inline-block text-sm font-medium text-industrial mb-4 tracking-wider">
+                SENSOR TECHNOLOGY
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-bold text-foreground mb-6 leading-tight">
+                <span className="block">센서 모듈 및 통신 포트</span>
+                <span className="block">기술</span>
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                물리적·전기적 상태를 정밀하게 측정하기 위한 센서 모듈과, 
+                산업 환경의 전자기 간섭 조건에서 안정적으로 데이터를 취득하는 통신 기술을 적용합니다.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Patent Info */}

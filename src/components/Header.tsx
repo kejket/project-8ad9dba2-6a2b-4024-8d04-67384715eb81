@@ -8,10 +8,10 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { label: "솔루션", href: "/solutions" },
-    { label: "기술", href: "/technology" },
-    { label: "산업분야", href: "/industry" },
-    { label: "회사소개", href: "/about" },
+    { label: "Solutions", href: "/solutions" },
+    { label: "Technology", href: "/technology" },
+    { label: "Industries", href: "/industry" },
+    { label: "About", href: "/about" },
   ];
 
   const handleNavClick = (href: string) => {
@@ -58,7 +58,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="navy" size="sm">
-              상담 문의
+              Contact
             </Button>
           </div>
 
@@ -98,7 +98,7 @@ const Header = () => {
                 )
               ))}
               <Button variant="navy" size="sm" className="mt-2">
-                상담 문의
+                Contact
               </Button>
             </div>
           </nav>
