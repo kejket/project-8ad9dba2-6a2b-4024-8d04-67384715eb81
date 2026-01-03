@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import digitalTwinImage from "@/assets/digital-twin-visualization.jpg";
 
 const steps = [
   {
@@ -103,32 +102,33 @@ const TechnologySection = () => {
 
             {/* Visual Representation */}
             <div className="relative">
-              <div className="rounded-xl overflow-hidden shadow-2xl">
-                <img 
-                  src={digitalTwinImage} 
-                  alt="Digital twin visualization with sensor data overlays" 
-                  className="w-full h-auto object-cover aspect-video"
-                />
-                {/* Overlay with data points */}
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-transparent" />
+              <div className="aspect-square max-w-md mx-auto relative">
+                {/* Outer Ring */}
+                <div className="absolute inset-0 border-2 border-dashed border-primary-foreground/20 rounded-full animate-spin" style={{ animationDuration: "30s" }} />
                 
-                {/* Stats Overlay */}
-                <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
-                  <div className="bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-4 py-3 border border-primary-foreground/10">
-                    <p className="text-2xl font-bold text-industrial-light">99.9%</p>
+                {/* Middle Ring */}
+                <div className="absolute inset-8 border border-primary-foreground/30 rounded-full" />
+                
+                {/* Inner Ring */}
+                <div className="absolute inset-16 bg-industrial/20 backdrop-blur-sm rounded-full border border-industrial/30 flex items-center justify-center">
+                  <div className="text-center">
+                    <p className="text-3xl font-bold text-industrial-light">99.9%</p>
                     <p className="text-xs text-primary-foreground/70">동기화 정확도</p>
                   </div>
-                  <div className="flex gap-2">
-                    <div className="bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-primary-foreground/10">
-                      <p className="text-xs text-primary-foreground/80">진동</p>
-                    </div>
-                    <div className="bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-primary-foreground/10">
-                      <p className="text-xs text-primary-foreground/80">온도</p>
-                    </div>
-                    <div className="bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-primary-foreground/10">
-                      <p className="text-xs text-primary-foreground/80">압력</p>
-                    </div>
-                  </div>
+                </div>
+
+                {/* Floating Data Points */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-primary-foreground/10">
+                  <p className="text-xs">진동 데이터</p>
+                </div>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-primary-foreground/10">
+                  <p className="text-xs">온도 데이터</p>
+                </div>
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-primary-foreground/10">
+                  <p className="text-xs">압력 데이터</p>
+                </div>
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-surface-elevated/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-primary-foreground/10">
+                  <p className="text-xs">전력 데이터</p>
                 </div>
               </div>
             </div>

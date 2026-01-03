@@ -1,5 +1,5 @@
 import { Factory, Droplets, Flame, Cog, Zap, Building2 } from "lucide-react";
-import industriesHeroImage from "@/assets/industries-hero.jpg";
+
 const industries = [
   {
     icon: Factory,
@@ -48,15 +48,6 @@ const IndustriesSection = () => {
             제조, 화학, 에너지, 인프라 등 각 산업은 고유한 설비 환경과 안전 요구사항을 가집니다. 
             sentia는 이러한 산업별 조건에 맞춘 모니터링 구성을 제공합니다.
           </p>
-        </div>
-
-        {/* Industries Hero Visual */}
-        <div className="rounded-xl overflow-hidden shadow-xl mb-12">
-          <img 
-            src={industriesHeroImage} 
-            alt="Diverse industrial environments - steel plant, chemical facility, automotive assembly, power plant" 
-            className="w-full h-auto object-cover aspect-[21/9]"
-          />
         </div>
 
         {/* Industries Grid */}

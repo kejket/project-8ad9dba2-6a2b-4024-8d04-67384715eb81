@@ -4,7 +4,6 @@ import PageHeader from "@/components/PageHeader";
 import DigitalTwinSection from "@/components/DigitalTwinSection";
 import ArchitectureInfographic from "@/components/ArchitectureInfographic";
 import { Button } from "@/components/ui/button";
-import solutionsDashboardImage from "@/assets/solutions-dashboard.jpg";
 import { 
   AlertTriangle, 
   Eye, 
@@ -175,19 +174,6 @@ const Solutions = () => {
           title={<>설비 상태를 파악하고<br />운영 대응력을 높입니다</>}
           description="현장에서 발생하는 설비 이상과 환경 변화를 조기에 감지하고, 운영자가 적시에 대응할 수 있도록 필요한 정보를 제공합니다."
         />
-
-        {/* Solutions Dashboard Visual */}
-        <section className="bg-navy">
-          <div className="container-narrow section-padding py-0">
-            <div className="rounded-xl overflow-hidden shadow-2xl -mt-12 relative z-10">
-              <img 
-                src={solutionsDashboardImage} 
-                alt="Industrial IoT monitoring dashboard showing equipment health and predictive maintenance" 
-                className="w-full h-auto object-cover aspect-[21/9]"
-              />
-            </div>
-          </div>
-        </section>
 
         {/* Section 1: Customer Problems */}
         <section className="py-20 bg-background">
