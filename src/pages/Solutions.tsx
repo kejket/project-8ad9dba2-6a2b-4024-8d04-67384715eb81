@@ -171,8 +171,8 @@ const Solutions = () => {
       <main>
         <PageHeader
           label="SOLUTIONS"
-          title={<>지능형 센싱 솔루션으로<br />현장을 이해합니다</>}
-          description="sentia의 센싱 솔루션은 산업 현장의 미세한 변화, 보이지 않는 위험, 놓치기 쉬운 신호를 정확하게 감지하고 해석하여 더 안전하고 효율적인 판단과 의사결정을 지원합니다."
+          title={<>설비 상태를 파악하고<br />운영 대응력을 높입니다</>}
+          description="현장에서 발생하는 설비 이상과 환경 변화를 조기에 감지하고, 운영자가 적시에 대응할 수 있도록 필요한 정보를 제공합니다."
         />
 
         {/* Section 1: Customer Problems */}

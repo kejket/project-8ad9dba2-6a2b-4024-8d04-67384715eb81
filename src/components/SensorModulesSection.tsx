@@ -61,8 +61,8 @@ const SensorModulesSection = () => {
             <span className="block">기술</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-            sentia는 산업 현장의 다양한 물리적·전기적 상태를 정확하게 측정하기 위해 
-            현장 환경에 최적화된 센서 모듈과 통신 포트 기술을 개발·적용합니다.
+            물리적·전기적 상태를 정밀하게 측정하기 위한 센서 모듈과, 
+            산업 환경의 전자기 간섭 조건에서 안정적으로 데이터를 취득하는 통신 기술을 적용합니다.
           </p>
         </div>
 

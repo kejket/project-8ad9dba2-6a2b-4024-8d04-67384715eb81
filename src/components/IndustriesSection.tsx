@@ -45,8 +45,8 @@ const IndustriesSection = () => {
             <span className="block sm:inline">적용</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            sentia의 센싱 솔루션은 제조업부터 에너지, 인프라까지 
-            각 산업의 특성에 맞춰 정확한 현장 이해와 의사결정을 지원합니다.
+            제조, 화학, 에너지, 인프라 등 각 산업은 고유한 설비 환경과 안전 요구사항을 가집니다. 
+            sentia는 이러한 산업별 조건에 맞춘 모니터링 구성을 제공합니다.
           </p>
         </div>
 
